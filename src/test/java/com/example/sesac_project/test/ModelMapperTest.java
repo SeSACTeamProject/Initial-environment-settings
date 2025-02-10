@@ -4,9 +4,11 @@ import com.example.sesac_project.domain.User;
 import com.example.sesac_project.dto.UserDTO;
 import org.junit.jupiter.api.Test;
 import org.modelmapper.ModelMapper;
+import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+@SpringBootTest
 public class ModelMapperTest {
 
     private final ModelMapper modelMapper = new ModelMapper();
