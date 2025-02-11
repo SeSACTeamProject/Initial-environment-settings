@@ -1,6 +1,6 @@
 package com.example.sesac_project.test;
 
-import com.example.sesac_project.domain.User;
+import com.example.sesac_project.example_domatin.User;
 import com.example.sesac_project.dto.UserDTO;
 import org.junit.jupiter.api.Test;
 import org.modelmapper.ModelMapper;

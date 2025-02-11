@@ -1,9 +1,9 @@
 spring:
   datasource:
     url:
-    username:
+    username: sa
     password:
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    driver-class-name: org.h2.Driver
 
   jpa:
     hibernate:

@@ -1,6 +1,6 @@
 package com.example.sesac_project.converter;
 
-import com.example.sesac_project.domain.IpPort;
+import com.example.sesac_project.example_domatin.IpPort;
 import org.springframework.core.convert.converter.Converter;
 
 public class StringToIpConverter implements Converter<String, IpPort> {

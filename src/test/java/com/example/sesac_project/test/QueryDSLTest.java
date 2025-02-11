@@ -1,7 +1,7 @@
 package com.example.sesac_project.test;
 
 import com.example.sesac_project.domain.QUser;
-import com.example.sesac_project.domain.User;
+import com.example.sesac_project.example_domatin.User;
 import com.example.sesac_project.respository.UserRepository;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 import jakarta.persistence.EntityManager;

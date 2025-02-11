@@ -1,4 +1,4 @@
-package com.example.sesac_project.domain;
+package com.example.sesac_project.example_domatin;
 
 import lombok.Data;
 import lombok.Getter;

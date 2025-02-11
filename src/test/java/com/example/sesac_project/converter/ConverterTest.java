@@ -1,6 +1,6 @@
 package com.example.sesac_project.converter;
 
-import com.example.sesac_project.domain.IpPort;
+import com.example.sesac_project.example_domatin.IpPort;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
