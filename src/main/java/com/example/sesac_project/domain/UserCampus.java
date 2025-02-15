@@ -5,16 +5,16 @@ import lombok.*;
 
 @Entity
 @Getter
-@NoArgsConstructor(access = AccessLevel.PROTECTED)  // JPA 기본 생성자
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Builder
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 @Table(name = "user_campus")
 public class UserCampus {
+
     @Id
     @GeneratedValue
     @Column(name = "user_campus_id")
     private Long id;
-
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "campus_id", nullable = false)
@@ -23,6 +23,5 @@ public class UserCampus {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id", nullable = false)
     private User user;
-
 
 }

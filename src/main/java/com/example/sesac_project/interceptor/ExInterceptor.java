@@ -13,9 +13,8 @@ import java.util.UUID;
 public class ExInterceptor implements HandlerInterceptor {
     public static final String LOG_ID = "logId";
     @Override
-    public boolean preHandle(HttpServletRequest request, HttpServletResponse
-            response, Object handler) throws Exception {
-        log.info("postHandle");
+    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
+        log.info("Ex Interceptor");
         return true;
     }
 

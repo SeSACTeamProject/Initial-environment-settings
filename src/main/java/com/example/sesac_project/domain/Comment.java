@@ -11,6 +11,7 @@ import lombok.*;
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 @Table(name = "comments")
 public class Comment extends BaseEntity{
+
     @Id
     @GeneratedValue
     @Column(name = "comment_id")

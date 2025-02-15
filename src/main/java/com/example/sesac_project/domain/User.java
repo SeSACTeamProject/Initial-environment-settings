@@ -30,7 +30,6 @@ public class User extends BaseEntity{
     @Column(nullable = false)
     private String password;
 
-
     @Enumerated(EnumType.STRING)
     private Role role;
 
@@ -44,16 +43,20 @@ public class User extends BaseEntity{
     @Column(nullable = false)
     private String lastNumber;
 
-    @OneToMany(mappedBy = "user")
-    private List<UserCampus> userCampuses = new ArrayList<>();
-
-    @OneToMany(mappedBy = "user")
-    private List<Like> likes = new ArrayList<>();
-
-    @OneToMany(mappedBy = "user")
-    private List<Post> post = new ArrayList<>();
-
-    @OneToMany(mappedBy = "user")
-    private List<Comment> comments = new ArrayList<>();
+//    @Builder.Default
+//    @OneToMany(mappedBy = "user")
+//    private List<UserCampus> userCampuses = new ArrayList<>();
+//
+//    @Builder.Default
+//    @OneToMany(mappedBy = "user")
+//    private List<Like> likes = new ArrayList<>();
+//
+//    @Builder.Default
+//    @OneToMany(mappedBy = "user")
+//    private List<Post> post = new ArrayList<>();
+//
+//    @Builder.Default
+//    @OneToMany(mappedBy = "user")
+//    private List<Comment> comments = new ArrayList<>();
 
 }

@@ -27,11 +27,10 @@ public class BaseEntity {
     private LocalDateTime deletedAt;
 
     @Column(name = "delete_flag", nullable = false)
+    private boolean deleteFlag = false;
 
-    private boolean deleteFlag;
 
-
-    public void setDeleteFlag(boolean deleteFlag) {
+    public void changeDeleteFlag(boolean deleteFlag) {
         this.deleteFlag = deleteFlag;
         if (deleteFlag) {
             this.deletedAt = LocalDateTime.now();

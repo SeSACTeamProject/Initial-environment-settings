@@ -2,8 +2,10 @@ package com.example.sesac_project.domain;
 
 import jakarta.persistence.Embeddable;
 import jakarta.persistence.Enumerated;
+import lombok.Getter;
 
 
+@Getter
 public enum PostType{
 
     STUDY("study"),PROJECT("project");
@@ -14,7 +16,4 @@ public enum PostType{
         this.type = type;
     }
 
-    public String getType() {
-        return type;
-    }
 }

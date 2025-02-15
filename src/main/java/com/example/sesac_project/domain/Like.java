@@ -1,6 +1,6 @@
 package com.example.sesac_project.domain;
 
-import com.example.sesac_project.example_domatin.User;
+
 import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.data.annotation.CreatedDate;

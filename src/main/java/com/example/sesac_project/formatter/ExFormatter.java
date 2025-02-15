@@ -9,8 +9,7 @@ import java.text.NumberFormat;
 import java.text.ParseException;
 import java.util.Locale;
 
-
-public class FormatEx implements Formatter<Number> {
+public class ExFormatter implements Formatter<Number> {
     @Override
     public Number parse(String text, Locale locale) throws ParseException {
         NumberFormat format = NumberFormat.getInstance(locale);

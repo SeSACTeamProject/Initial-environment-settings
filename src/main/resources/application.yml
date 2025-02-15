@@ -1,15 +1,14 @@
 spring:
   datasource:
-    url:
+    url: jdbc:h2:tcp://localhost/~/test
     username: sa
     password:
     driver-class-name: org.h2.Driver
 
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: create
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.MySQL8Dialect
-    show-sql: true
-    format-sql: true
+# show_sql: true
+      format_sql: true

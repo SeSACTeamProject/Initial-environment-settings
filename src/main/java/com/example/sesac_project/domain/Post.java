@@ -30,18 +30,27 @@ public class Post extends BaseEntity {
     @Column(nullable = false)
     private PostType postType;
 
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
+    private PostStatus postStatus;
+
     @Builder.Default
-    private Integer views = 0;
+    private Integer viewsCount = 0;
+
+    @Builder.Default
+    private Integer likesCount = 0;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id")
     private User user;
 
-    @OneToMany(mappedBy = "post")
-    private List<Like> likes = new ArrayList<>();
-
-    @OneToMany(mappedBy = "comment")
-    private List<Comment> comments = new ArrayList<>();
+//    @Builder.Default
+//    @OneToMany(mappedBy = "post") // cascade = CascadeType.ALL
+//    private List<Like> likes = new ArrayList<>();
+//
+//    @Builder.Default
+//    @OneToMany(mappedBy = "post") // cascade = CascadeType.ALL
+//    private List<Comment> comments = new ArrayList<>();
 
 
 }

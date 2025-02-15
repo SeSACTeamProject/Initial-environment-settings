@@ -1,13 +1,12 @@
 package com.example.sesac_project.domain;
 
+import lombok.Getter;
+
+@Getter
 public enum Role{
-    ADMIN("admin"),USER("user");
+    ADMIN("admin"),USER("user"),PENDING("pending");
 
-    String role;
-
-    public String getRole() {
-        return role;
-    }
+    private final String role;
 
     Role(String role) {
         this.role = role;
